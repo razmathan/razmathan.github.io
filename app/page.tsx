@@ -34,7 +34,7 @@ export default function Home() {
 
             <div className="socials text-left mt-3 flex items-center gap-4 sm:block">
               <a
-                href="mailto:mathan@skku.edu"
+                href="mailto:mathan@chungbuk.ac.kr"
                 className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
               >
                 <MdEmail className="inline mr-2" size={16} />
