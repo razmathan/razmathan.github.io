@@ -34,29 +34,29 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-emerald-950 flex flex-col">
+    <div className="min-h-screen bg-earth-950 flex flex-col">
       <Navbar />
 
       {/* Page header */}
-      <div className="bg-emerald-900 py-10 px-6">
+      <div className="bg-earth-900 py-10 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold">Projects</h1>
-          <p className="text-emerald-300 text-sm mt-2">Research and development projects</p>
+          <p className="text-sage text-sm mt-2">Research and development projects</p>
         </div>
       </div>
 
       <main className="max-w-4xl mx-auto px-6 py-12 w-full flex-1">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <div key={project.title} className="bg-emerald-900 rounded-xl p-6 flex flex-col gap-3">
+            <div key={project.title} className="bg-earth-900 rounded-xl p-6 flex flex-col gap-3">
               <div>
                 <h2 className="text-lg font-bold leading-snug">{project.title}</h2>
-                <p className="text-xs text-orange-400 uppercase tracking-widest mt-1">{project.period}</p>
+                <p className="text-xs text-sienna uppercase tracking-widest mt-1">{project.period}</p>
               </div>
               <p className="text-sm text-gray-200 leading-relaxed flex-1">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-1">
                 {project.tools.map((tool) => (
-                  <span key={tool} className="text-xs bg-emerald-800 text-emerald-200 px-2 py-0.5 rounded">
+                  <span key={tool} className="text-xs bg-earth-800 text-cream px-2 py-0.5 rounded">
                     {tool}
                   </span>
                 ))}

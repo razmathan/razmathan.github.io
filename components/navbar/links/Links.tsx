@@ -23,8 +23,8 @@ const Links = () => {
             href={link.path}
             className={`px-4 py-1 text-sm font-medium whitespace-nowrap transition-colors ${
               pathName === link.path
-                ? "text-orange-400 underline underline-offset-4"
-                : "text-gray-200 hover:text-orange-400"
+                ? "text-sienna underline underline-offset-4"
+                : "text-gray-200 hover:text-sienna"
             }`}
           >
             {link.title}
@@ -35,7 +35,7 @@ const Links = () => {
             href={link.path}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-1 text-sm font-medium whitespace-nowrap text-gray-200 hover:text-orange-400 transition-colors"
+            className="px-4 py-1 text-sm font-medium whitespace-nowrap text-gray-200 hover:text-sienna transition-colors"
           >
             {link.title}
           </a>

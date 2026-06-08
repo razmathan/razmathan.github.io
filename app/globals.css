@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #022c22;
-  --foreground: #ffffff;
+  --background: #1C1A0A;
+  --foreground: #F0E6D3;
 }
 
 @theme inline {
@@ -10,6 +10,19 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Earthy palette */
+  --color-cream: #F0E6D3;
+  --color-sage: #B5B09A;
+  --color-mauve: #C9A898;
+  --color-sienna: #A0622A;
+  --color-olive: #6B6535;
+
+  /* Dark earthy backgrounds */
+  --color-earth-950: #1C1A0A;
+  --color-earth-900: #2D2A14;
+  --color-earth-800: #3A3720;
+  --color-earth-700: #4A4730;
 }
 
 body {

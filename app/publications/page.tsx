@@ -4,20 +4,20 @@ import Footer from "@/components/footer/Footer";
 
 export default function PublicationsPage() {
   return (
-    <div className="min-h-screen bg-emerald-950 flex flex-col">
+    <div className="min-h-screen bg-earth-950 flex flex-col">
       <Navbar />
 
       {/* Page header */}
-      <div className="bg-emerald-900 py-10 px-6">
+      <div className="bg-earth-900 py-10 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold">Publications</h1>
-          <p className="text-emerald-300 text-sm mt-2">Peer-reviewed journals and conference proceedings</p>
+          <p className="text-sage text-sm mt-2">Peer-reviewed journals and conference proceedings</p>
         </div>
       </div>
 
       <main className="max-w-4xl mx-auto px-6 py-12 w-full flex-1">
 
-        <h2 className="text-xl font-semibold mb-6 text-orange-400 border-b border-emerald-800 pb-2">
+        <h2 className="text-xl font-semibold mb-6 text-sienna border-b border-earth-800 pb-2">
           Journal Articles
         </h2>
         <div className="flex flex-col mb-12">
@@ -51,7 +51,7 @@ export default function PublicationsPage() {
           />
         </div>
 
-        <h2 className="text-xl font-semibold mb-6 text-orange-400 border-b border-emerald-800 pb-2">
+        <h2 className="text-xl font-semibold mb-6 text-sienna border-b border-earth-800 pb-2">
           Conference Papers
         </h2>
         <div className="flex flex-col">

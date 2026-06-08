@@ -63,20 +63,20 @@ function TimelineItem({
   return (
     <div className="relative pl-8 pb-10 last:pb-0">
       {/* Timeline line */}
-      <div className="absolute left-0 top-2 bottom-0 w-px bg-emerald-800" />
+      <div className="absolute left-0 top-2 bottom-0 w-px bg-earth-800" />
       {/* Dot */}
-      <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-orange-400 ring-2 ring-emerald-950" />
+      <div className="absolute left-[-5px] top-2 w-3 h-3 rounded-full bg-sienna ring-2 ring-earth-950" />
 
       <div className="mb-1 flex flex-wrap items-baseline gap-3">
         <h3 className="text-lg font-bold">{role}</h3>
-        <span className="text-xs text-orange-400 uppercase tracking-widest">{period}</span>
+        <span className="text-xs text-sienna uppercase tracking-widest">{period}</span>
       </div>
-      <p className="text-sm text-emerald-300 mb-1">{org}</p>
-      {advisor && <p className="text-xs text-emerald-500 mb-3">Advisor: {advisor}</p>}
+      <p className="text-sm text-sage mb-1">{org}</p>
+      {advisor && <p className="text-xs text-mauve mb-3">Advisor: {advisor}</p>}
       <ul className="space-y-1.5">
         {points.map((pt, i) => (
           <li key={i} className="flex items-start gap-2 text-sm text-gray-200">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0 mt-1.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0 mt-1.5" />
             {pt}
           </li>
         ))}
@@ -87,20 +87,20 @@ function TimelineItem({
 
 export default function ExperiencePage() {
   return (
-    <div className="min-h-screen bg-emerald-950 flex flex-col">
+    <div className="min-h-screen bg-earth-950 flex flex-col">
       <Navbar />
 
       {/* Page header */}
-      <div className="bg-emerald-900 py-10 px-6">
+      <div className="bg-earth-900 py-10 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold">Experience</h1>
-          <p className="text-emerald-300 text-sm mt-2">Research and professional background</p>
+          <p className="text-sage text-sm mt-2">Research and professional background</p>
         </div>
       </div>
 
       <main className="max-w-4xl mx-auto px-6 py-12 w-full flex-1">
 
-        <h2 className="text-xl font-semibold mb-8 text-orange-400 border-b border-emerald-800 pb-2">
+        <h2 className="text-xl font-semibold mb-8 text-sienna border-b border-earth-800 pb-2">
           Research Experience
         </h2>
         <div className="mb-14">
@@ -109,7 +109,7 @@ export default function ExperiencePage() {
           ))}
         </div>
 
-        <h2 className="text-xl font-semibold mb-8 text-orange-400 border-b border-emerald-800 pb-2">
+        <h2 className="text-xl font-semibold mb-8 text-sienna border-b border-earth-800 pb-2">
           Work Experience
         </h2>
         <div>
