@@ -114,8 +114,6 @@ export default function Home() {
                     "Automated Inspection & Monitoring",
                     "Point Cloud Processing",
                     "Human-Robot Collaboration",
-                    "Semantic Segmentation",
-                    "Autonomous Systems",
                   ].map((area) => (
                     <span
                       key={area}
