@@ -72,8 +72,8 @@ export default function Home() {
 
           {/* Right: About content */}
           <div className="md:col-span-2">
-            <div className="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-sienna/20 border border-sienna/40 rounded-full text-base text-mauve font-bold">
-              <span className="w-2.5 h-2.5 rounded-full bg-sienna animate-blink" />
+            <div className="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-sienna/20 border border-sienna/40 rounded-full text-base text-mauve font-bold animate-blink">
+              <span className="w-2.5 h-2.5 rounded-full bg-sienna" />
               Open to PhD positions
             </div>
             <h2 className="text-3xl font-bold mb-5">About Me</h2>
