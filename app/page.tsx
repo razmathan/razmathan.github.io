@@ -1,112 +1,119 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar/Navbar";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdDownload } from "react-icons/md";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaGoogleScholar } from "react-icons/fa6";
+import { FaGoogleScholar, FaGraduationCap } from "react-icons/fa6";
 import Footer from "@/components/footer/Footer";
-import Publication from "@/components/publication/Publication";
-
-const prefix = '';
 
 export default function Home() {
   return (
-    <div className="w-full h-full bg-gray-950 mx-auto min-h-screen flex flex-col items-center">
-      <div className="w-full mx-auto min-h-screen flex flex-col items-center">
-        <Navbar />
-        <hr className="w-full h-0.5 border-orange-900 mb-4" />
-        <main className="max-w-[1260px] w-full mt-6 px-4 flex flex-col sm:grid sm:grid-cols-8 sm:gap-6 items-start">
+    <div className="min-h-screen bg-emerald-950 flex flex-col">
+      <Navbar />
 
-          {/* Sidebar */}
-          <div className="col-span-2 mb-6 sm:px-0 px-6 flex flex-col items-center sm:items-start">
+      {/* Hero / Bio Section */}
+      <section className="relative bg-emerald-900 overflow-hidden">
+
+        {/* Topographic wave background */}
+        <div className="absolute inset-0 pointer-events-none">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="topo" width="320" height="320" patternUnits="userSpaceOnUse">
+                <path d="M0,160 C60,120 120,80 160,110 S280,155 320,130" fill="none" stroke="white" strokeOpacity="0.06" strokeWidth="1.5"/>
+                <path d="M0,210 C60,170 120,130 160,160 S280,205 320,180" fill="none" stroke="white" strokeOpacity="0.05" strokeWidth="1.5"/>
+                <path d="M0,110 C60,70 120,30 160,60 S280,105 320,80" fill="none" stroke="white" strokeOpacity="0.06" strokeWidth="1.5"/>
+                <path d="M0,260 C60,230 120,195 160,215 S280,255 320,235" fill="none" stroke="white" strokeOpacity="0.04" strokeWidth="1"/>
+                <path d="M0,60 C60,25 120,-10 160,15 S280,55 320,35" fill="none" stroke="white" strokeOpacity="0.04" strokeWidth="1"/>
+                <path d="M0,290 C60,270 120,250 160,265 S280,290 320,278" fill="none" stroke="white" strokeOpacity="0.03" strokeWidth="1"/>
+                <path d="M0,30 C60,5 120,-25 160,-5 S280,25 320,10" fill="none" stroke="white" strokeOpacity="0.03" strokeWidth="1"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#topo)"/>
+          </svg>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+          {/* Left: Profile sidebar */}
+          <div className="flex flex-col items-center text-center">
             <Image
-              src={`${prefix}/images/headshot.jpg`}
+              src="/images/headshot.jpg"
               alt="Mathanraj Rajendran"
-              height={160}
-              width={160}
-              className="rounded-full object-cover"
+              width={180}
+              height={180}
+              className="rounded-full object-cover ring-4 ring-emerald-700"
             />
-            <h2 className="text-xl font-semibold mt-4">Mathanraj Rajendran</h2>
-            <p className="text-md text-orange-400 text-left mt-1">Research Assistant</p>
-            <p className="text-sm text-orange-700 leading-snug mt-1">
+            <h1 className="text-2xl font-bold mt-5">Mathanraj Rajendran</h1>
+            <p className="text-orange-400 font-medium mt-1">Research Assistant</p>
+            <p className="text-emerald-300 text-sm mt-1 leading-snug">
               Smart Construction &amp; Systems Lab<br />
               Chungbuk National University
             </p>
 
-            <div className="socials text-left mt-3 flex items-center gap-4 sm:block">
-              <a
-                href="mailto:mathan@chungbuk.ac.kr"
-                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
-              >
-                <MdEmail className="inline mr-2" size={16} />
-                Email
+            {/* Social icons */}
+            <div className="flex items-center gap-4 mt-5">
+              <a href="mailto:mathan@chungbuk.ac.kr" title="Email"
+                className="text-emerald-300 hover:text-orange-400 transition-colors">
+                <MdEmail size={22} />
               </a>
-              <a
-                href="https://www.linkedin.com/in/mathanraj-rajendran"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
-              >
-                <BsLinkedin className="inline mr-2" size={16} />
-                LinkedIn
+              <a href="https://github.com/mathanraj" target="_blank" rel="noopener noreferrer" title="GitHub"
+                className="text-emerald-300 hover:text-orange-400 transition-colors">
+                <BsGithub size={20} />
               </a>
-              <a
-                href="https://github.com/mathanraj"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
-              >
-                <BsGithub className="inline mr-2" size={16} />
-                GitHub
+              <a href="https://www.linkedin.com/in/mathanraj-rajendran" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                className="text-emerald-300 hover:text-orange-400 transition-colors">
+                <BsLinkedin size={20} />
               </a>
-              <a
-                href="https://scholar.google.com/citations?user=dcF-jxgAAAAJ&hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
-              >
-                <FaGoogleScholar className="inline mr-2" size={16} />
-                Google Scholar
+              <a href="https://scholar.google.com/citations?user=dcF-jxgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"
+                className="text-emerald-300 hover:text-orange-400 transition-colors">
+                <FaGoogleScholar size={20} />
               </a>
             </div>
           </div>
 
-          {/* Main content */}
-          <section className="col-span-6 flex flex-col items-start px-4">
+          {/* Right: About content */}
+          <div className="md:col-span-2">
+            <h2 className="text-3xl font-bold mb-5">About Me</h2>
+            <div className="space-y-4 text-gray-200 leading-relaxed text-sm">
+              <p>
+                I am a <strong className="text-white">Research Assistant</strong> at the{" "}
+                <strong className="text-white">Smart Construction &amp; Systems Laboratory</strong>,{" "}
+                <strong className="text-white">Chungbuk National University</strong>, South Korea, under the
+                supervision of <strong className="text-white">Prof. Min-Koo Kim</strong>. I completed my{" "}
+                <strong className="text-white">Master of Science in Global Smart City</strong> at{" "}
+                <strong className="text-white">Sungkyunkwan University</strong> (GPA: 4.31/4.5), with a thesis on
+                dimensional quality assessment of structural steel members using terrestrial laser scan data.
+              </p>
+              <p>
+                My research lies at the intersection of{" "}
+                <strong className="text-white">artificial intelligence, robotics, and the built environment</strong>.
+                I am interested in how robots can perceive, understand, and interact with complex construction
+                environments autonomously and safely. My current work focuses on semantic segmentation using{" "}
+                <strong className="text-white">foundation models and Vision Language Models (VLMs)</strong>,
+                synthetic data generation, and real-time object detection for robotic manipulation.
+              </p>
+              <p>
+                My long-term goal is to develop practical robotic systems integrating perception, environmental
+                understanding, and autonomous decision-making for{" "}
+                <strong className="text-white">human-robot collaboration</strong> in real construction environments.
+              </p>
+            </div>
 
-            {/* About Me */}
-            <section className="w-full mb-12" id="about">
-              <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-              <div className="space-y-4 leading-relaxed">
-                <p className="text-justify">
-                  I am a <strong>Research Assistant</strong> at the{" "}
-                  <strong>Smart Construction &amp; Systems Laboratory</strong>,{" "}
-                  <strong>Chungbuk National University</strong>, South Korea, under the supervision
-                  of <strong>Prof. Min-Koo Kim</strong>. I completed my{" "}
-                  <strong>Master of Science in Global Smart City</strong> at{" "}
-                  <strong>Sungkyunkwan University</strong>, advised by Prof. Sung-Han Sim
-                  and Prof. Min-Koo Kim, with a thesis on dimensional quality assessment of structural
-                  steel members using terrestrial laser scan data.
-                </p>
-                <p className="text-justify">
-                  My research lies at the intersection of{" "}
-                  <strong>artificial intelligence, robotics, and the built environment</strong>. I am
-                  interested in how robots can perceive, understand, and interact with complex construction
-                  environments to perform tasks autonomously and safely. My current work focuses on semantic
-                  segmentation of building environments using{" "}
-                  <strong>foundation models and Vision Language Models (VLMs)</strong>, synthetic data
-                  generation for construction AI, and real-time object detection for robotic manipulation.
-                </p>
-                <p className="text-justify">
-                  My long-term goal is to develop practical robotic systems that operate safely, efficiently,
-                  and reliably in real construction environments, integrating perception, environmental
-                  understanding, and autonomous decision-making for{" "}
-                  <strong>human-robot collaboration</strong> in complex real-world settings.
-                </p>
-              </div>
+            {/* Download CV */}
+            <a
+              href="/mathanraj_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-emerald-800 hover:bg-emerald-700 text-white rounded-md text-sm font-medium transition-colors"
+            >
+              <MdDownload size={18} />
+              Download CV
+            </a>
 
+            {/* Interests + Education */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10">
               <div>
-                <h3 className="text-xl font-semibold mb-4 mt-10">Research Interests</h3>
-                <div className="flex flex-wrap gap-3">
+                <h3 className="text-orange-400 font-bold text-lg mb-3">Interests</h3>
+                <ul className="space-y-2">
                   {[
                     "Construction Robotics",
                     "Computer Vision",
@@ -114,139 +121,41 @@ export default function Home() {
                     "Automated Inspection & Monitoring",
                     "Point Cloud Processing",
                     "Human-Robot Collaboration",
-                  ].map((area) => (
-                    <span
-                      key={area}
-                      className="px-4 py-1.5 bg-gray-900 font-medium rounded-full text-sm shadow-sm"
-                    >
-                      {area}
-                    </span>
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-sm text-gray-200">
+                      <span className="w-1.5 h-1.5 rounded-full bg-orange-400 flex-shrink-0" />
+                      {item}
+                    </li>
                   ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Publications */}
-            <section className="my-12 w-full" id="publications">
-              <h2 className="text-3xl font-semibold mb-10 text-white">Publications</h2>
-
-              <h3 className="text-xl font-semibold mb-6 text-orange-400 border-b border-orange-900 pb-2">
-                Journal Articles
-              </h3>
-              <div className="flex flex-col mb-12">
-                <Publication
-                  date="2025"
-                  title="Automated dimensional quality assessment of steel members using TLS and enhanced edge line estimation"
-                  authors="Rajendran, M., Sim, S. H., Kim, M. K., Choi, Y. K., & Yi, C. Y."
-                  venue="Measurement, 118990"
-                  paperUrl="https://doi.org/10.1016/j.measurement.2025.118990"
-                />
-                <Publication
-                  date="2025"
-                  title="Human and Multi-Robot Collaboration in Indoor Environments: A Review of Methods and Application Potential for Indoor Construction Sites"
-                  authors="Duorinaah, F. X., Rajendran, M., Kim, T. W., Kim, J. I., Lee, S., Lee, S., & Kim, M. K."
-                  venue="Buildings, 15(15), 2794"
-                  paperUrl="https://doi.org/10.3390/buildings15152794"
-                />
-                <Publication
-                  date="2026"
-                  title="Advancing Indoor Construction with Autonomous Robots: Exploring Mobile Robot Applications, Operations, and Challenges in Building Environments"
-                  authors="Rajendran, M., Duorinaah, F. X., & Kim, M. K."
-                  venue="Journal of Information Technology in Construction"
-                  status="Under Review"
-                />
-                <Publication
-                  date="2026"
-                  title="Automated Shape-Aware Dimensional Classification and Semantic-Instance Segmentation of Steel Structures from Occluded Point Cloud Data"
-                  authors="Rajendran, M., Ayembilla, F.B., Sim, S. H., & Kim, M. K."
-                  venue="Automation in Construction"
-                  status="Under Review"
-                />
+                </ul>
               </div>
 
-              <h3 className="text-xl font-semibold mb-6 text-orange-400 border-b border-orange-900 pb-2">
-                Conference Papers
-              </h3>
-              <div className="flex flex-col">
-                <Publication
-                  date="2026"
-                  title="Semantic Segmentation of MEP Point Cloud Scenes Using Point Cloud Completion Approach"
-                  authors="Ayembilla, F.B., Rajendran, M., Kim, M. K."
-                  venue="ICCEPM 2025, Jeju"
-                  paperUrl="https://doi.org/10.6106/ICCEPM.2025.0306"
-                />
-                <Publication
-                  date="2024"
-                  title="Dimensional Quality Assessment of Steel H-Beams Using Terrestrial Laser Scan Data"
-                  authors="Rajendran, M., Sim, S. H., Kim, M. K., & Choi, Y. K."
-                  venue="International Conference on Construction Engineering and Project Management (pp. 264–270)"
-                  paperUrl="https://doi.org/10.6106/ICCEPM.2024.0264"
-                />
+              <div>
+                <h3 className="text-orange-400 font-bold text-lg mb-3">Education</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <FaGraduationCap className="text-emerald-400 mt-0.5 flex-shrink-0" size={18} />
+                    <div>
+                      <p className="text-sm font-semibold text-white">MSc Global Smart City</p>
+                      <p className="text-xs text-emerald-300">Sungkyunkwan University · 2023–2025</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <FaGraduationCap className="text-emerald-400 mt-0.5 flex-shrink-0" size={18} />
+                    <div>
+                      <p className="text-sm font-semibold text-white">BE Civil Engineering</p>
+                      <p className="text-xs text-emerald-300">Anna University · 2014–2018</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </section>
+            </div>
+          </div>
 
-            {/* Projects */}
-            <section className="my-12 mb-24 w-full" id="projects">
-              <h2 className="text-3xl font-semibold mb-10">Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        </div>
+      </section>
 
-                <div className="p-4 bg-gray-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Semantic Segmentation of Indoor Point Clouds</h3>
-                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2026 – Present</p>
-                  <p className="text-sm text-white mb-2">
-                    Developing approaches for improving semantic segmentation accuracy of building environments
-                    by integrating images and point clouds with zero-shot techniques and Vision Language Models (VLMs).
-                  </p>
-                  <p className="text-xs font-mono text-orange-600">
-                    Tools: Python · VLMs · Foundation Models · Point Cloud Processing
-                  </p>
-                </div>
-
-                <div className="p-4 bg-gray-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Bin Picking Using Robotic Arm Manipulation</h3>
-                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2025 – Present</p>
-                  <p className="text-sm text-white mb-2">
-                    Developing methods for real-time bin picking using robotic arms in controlled environments,
-                    integrating AI, computer vision, and multi-modal sensors for object detection and manipulation.
-                  </p>
-                  <p className="text-xs font-mono text-orange-600">
-                    Tools: Python · Computer Vision · Robotic Arms · Multi-modal Sensors
-                  </p>
-                </div>
-
-                <div className="p-4 bg-gray-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Dimensional Quality Assessment of Precast Concrete Panels</h3>
-                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2023 – 2025</p>
-                  <p className="text-sm text-white mb-2">
-                    Developed a methodology for precise dimensional quality assessment of precast concrete panels
-                    by estimating edge lines from point cloud data, and proposed a data-fusion technique integrating
-                    image and point cloud data for rapid evaluation of precast bridge deck panels.
-                  </p>
-                  <p className="text-xs font-mono text-orange-600">
-                    Tools: MATLAB · Python · TLS · Point Cloud · BIM/IFC
-                  </p>
-                </div>
-
-                <div className="p-4 bg-gray-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Dimensional Quality Assessment of Structural Steel Members</h3>
-                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2023 – 2025</p>
-                  <p className="text-sm text-white mb-2">
-                    Developed an automated method for accurate cross-sectional dimensional assessment of
-                    structural steel using terrestrial laser scanning. Proposed an edge-loss compensation model
-                    that significantly improved measurement accuracy from low-resolution TLS point clouds.
-                  </p>
-                  <p className="text-xs font-mono text-orange-600">
-                    Tools: MATLAB · Python · TLS · Point Cloud Processing
-                  </p>
-                </div>
-
-              </div>
-            </section>
-
-          </section>
-        </main>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
