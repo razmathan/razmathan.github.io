@@ -59,7 +59,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://scholar.google.com"
+                href="https://scholar.google.com/citations?user=dcF-jxgAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
