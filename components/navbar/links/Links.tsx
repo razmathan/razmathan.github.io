@@ -39,7 +39,7 @@ const Links = () => {
                     <Link
                         key={link.title}
                         href={link.path}
-                        className={`px-6 text-sm font-semibold hover:text-blue-300`}
+                        className={`px-6 text-sm font-semibold hover:text-orange-400`}
                     >
                         {link.title}
                     </Link>
@@ -50,7 +50,7 @@ const Links = () => {
                         href={link.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 text-sm font-semibold hover:text-blue-300"
+                        className="px-6 text-sm font-semibold hover:text-orange-400"
                     >
                         {link.title}
                     </a>

@@ -19,7 +19,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
       namePattern.test(part) ? (
         <span key={i} className="text-white font-semibold">{part}</span>
       ) : (
-        <span key={i} className="text-gray-500">{part}</span>
+        <span key={i} className="text-orange-600">{part}</span>
       )
     );
   };
@@ -27,7 +27,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
   return (
     <div className="flex flex-col md:flex-row gap-2 md:gap-8 mb-10 last:mb-0">
       {/* Date Column - Cleaner Styling */}
-      <div className="w-24 shrink-0 text-sm font-medium text-gray-500 pt-1.5 uppercase tracking-widest">
+      <div className="w-24 shrink-0 text-sm font-medium text-orange-500 pt-1.5 uppercase tracking-widest">
         {date}
       </div>
       
@@ -36,7 +36,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
         <h3 className="text-xl font-bold text-white leading-tight">
           {title}
           {status && (
-            <span className="text-gray-600 font-normal italic text-sm ml-2">
+            <span className="text-orange-600 font-normal italic text-sm ml-2">
               ({status})
             </span>
           )}
@@ -46,7 +46,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
           {renderAuthors(authors)}
         </p>
         
-        <p className="text-gray-500 italic text-sm mt-1">
+        <p className="text-orange-500 italic text-sm mt-1">
           {venue}
         </p>
 
@@ -56,7 +56,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
               href={paperUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-blue-400 text-xs hover:underline"
+              className="text-orange-400 text-xs hover:underline"
             >
               [ Paper ]
             </a>

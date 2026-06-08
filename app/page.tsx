@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full h-full bg-gray-950 mx-auto min-h-screen flex flex-col items-center">
       <div className="w-full mx-auto min-h-screen flex flex-col items-center">
         <Navbar />
-        <hr className="w-full h-0.5 border-gray-800 mb-4" />
+        <hr className="w-full h-0.5 border-orange-900 mb-4" />
         <main className="max-w-[1260px] w-full mt-6 px-4 flex flex-col sm:grid sm:grid-cols-8 sm:gap-6 items-start">
 
           {/* Sidebar */}
@@ -26,8 +26,8 @@ export default function Home() {
               className="rounded-full object-cover"
             />
             <h2 className="text-xl font-semibold mt-4">Mathanraj Rajendran</h2>
-            <p className="text-md text-gray-400 text-left mt-1">Research Assistant</p>
-            <p className="text-sm text-gray-600 leading-snug mt-1">
+            <p className="text-md text-orange-400 text-left mt-1">Research Assistant</p>
+            <p className="text-sm text-orange-700 leading-snug mt-1">
               Smart Construction &amp; Systems Lab<br />
               Chungbuk National University
             </p>
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="socials text-left mt-3 flex items-center gap-4 sm:block">
               <a
                 href="mailto:mathan@skku.edu"
-                className="block mt-2 text-blue-400 hover:underline text-sm flex items-center my-2"
+                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
               >
                 <MdEmail className="inline mr-2" size={16} />
                 Email
@@ -44,7 +44,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/mathanraj-rajendran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-2 text-blue-400 hover:underline text-sm flex items-center my-2"
+                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
               >
                 <BsLinkedin className="inline mr-2" size={16} />
                 LinkedIn
@@ -53,7 +53,7 @@ export default function Home() {
                 href="https://github.com/mathanraj"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-2 text-blue-400 hover:underline text-sm flex items-center my-2"
+                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
               >
                 <BsGithub className="inline mr-2" size={16} />
                 GitHub
@@ -62,7 +62,7 @@ export default function Home() {
                 href="https://scholar.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mt-2 text-blue-400 hover:underline text-sm flex items-center my-2"
+                className="block mt-2 text-orange-400 hover:underline text-sm flex items-center my-2"
               >
                 <FaGoogleScholar className="inline mr-2" size={16} />
                 Google Scholar
@@ -98,7 +98,7 @@ export default function Home() {
                 </p>
                 <p className="text-justify">
                   My long-term goal is to develop practical robotic systems that operate safely, efficiently,
-                  and reliably in real construction environments — integrating perception, environmental
+                  and reliably in real construction environments - integrating perception, environmental
                   understanding, and autonomous decision-making for{" "}
                   <strong>human-robot collaboration</strong> in complex real-world settings.
                 </p>
@@ -132,7 +132,7 @@ export default function Home() {
             <section className="my-12 w-full" id="publications">
               <h2 className="text-3xl font-semibold mb-10 text-white">Publications</h2>
 
-              <h3 className="text-xl font-semibold mb-6 text-gray-300 border-b border-gray-800 pb-2">
+              <h3 className="text-xl font-semibold mb-6 text-orange-400 border-b border-orange-900 pb-2">
                 Journal Articles
               </h3>
               <div className="flex flex-col mb-12">
@@ -166,7 +166,7 @@ export default function Home() {
                 />
               </div>
 
-              <h3 className="text-xl font-semibold mb-6 text-gray-300 border-b border-gray-800 pb-2">
+              <h3 className="text-xl font-semibold mb-6 text-orange-400 border-b border-orange-900 pb-2">
                 Conference Papers
               </h3>
               <div className="flex flex-col">
@@ -194,50 +194,50 @@ export default function Home() {
 
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Semantic Segmentation of Indoor Point Clouds</h3>
-                  <p className="text-xs text-gray-500 mb-2 uppercase tracking-widest">2026 – Present</p>
-                  <p className="text-sm text-gray-300 mb-2">
+                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2026 – Present</p>
+                  <p className="text-sm text-white mb-2">
                     Developing approaches for improving semantic segmentation accuracy of building environments
                     by integrating images and point clouds with zero-shot techniques and Vision Language Models (VLMs).
                   </p>
-                  <p className="text-xs font-mono text-gray-500">
+                  <p className="text-xs font-mono text-orange-600">
                     Tools: Python · VLMs · Foundation Models · Point Cloud Processing
                   </p>
                 </div>
 
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Bin Picking Using Robotic Arm Manipulation</h3>
-                  <p className="text-xs text-gray-500 mb-2 uppercase tracking-widest">2025 – Present</p>
-                  <p className="text-sm text-gray-300 mb-2">
+                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2025 – Present</p>
+                  <p className="text-sm text-white mb-2">
                     Developing methods for real-time bin picking using robotic arms in controlled environments,
                     integrating AI, computer vision, and multi-modal sensors for object detection and manipulation.
                   </p>
-                  <p className="text-xs font-mono text-gray-500">
+                  <p className="text-xs font-mono text-orange-600">
                     Tools: Python · Computer Vision · Robotic Arms · Multi-modal Sensors
                   </p>
                 </div>
 
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Dimensional Quality Assessment of Precast Concrete Panels</h3>
-                  <p className="text-xs text-gray-500 mb-2 uppercase tracking-widest">2023 – 2025</p>
-                  <p className="text-sm text-gray-300 mb-2">
+                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2023 – 2025</p>
+                  <p className="text-sm text-white mb-2">
                     Developed a methodology for precise dimensional quality assessment of precast concrete panels
                     by estimating edge lines from point cloud data, and proposed a data-fusion technique integrating
                     image and point cloud data for rapid evaluation of precast bridge deck panels.
                   </p>
-                  <p className="text-xs font-mono text-gray-500">
+                  <p className="text-xs font-mono text-orange-600">
                     Tools: MATLAB · Python · TLS · Point Cloud · BIM/IFC
                   </p>
                 </div>
 
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2">Dimensional Quality Assessment of Structural Steel Members</h3>
-                  <p className="text-xs text-gray-500 mb-2 uppercase tracking-widest">2023 – 2025</p>
-                  <p className="text-sm text-gray-300 mb-2">
+                  <p className="text-xs text-orange-600 mb-2 uppercase tracking-widest">2023 – 2025</p>
+                  <p className="text-sm text-white mb-2">
                     Developed an automated method for accurate cross-sectional dimensional assessment of
                     structural steel using terrestrial laser scanning. Proposed an edge-loss compensation model
                     that significantly improved measurement accuracy from low-resolution TLS point clouds.
                   </p>
-                  <p className="text-xs font-mono text-gray-500">
+                  <p className="text-xs font-mono text-orange-600">
                     Tools: MATLAB · Python · TLS · Point Cloud Processing
                   </p>
                 </div>
