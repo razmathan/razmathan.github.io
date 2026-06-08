@@ -83,7 +83,7 @@ export default function Home() {
                   <strong>Chungbuk National University</strong>, South Korea, under the supervision
                   of <strong>Prof. Min-Koo Kim</strong>. I completed my{" "}
                   <strong>Master of Science in Global Smart City</strong> at{" "}
-                  <strong>Sungkyunkwan University</strong> (GPA: 4.31/4.5), advised by Prof. Sung-Han Sim
+                  <strong>Sungkyunkwan University</strong>, advised by Prof. Sung-Han Sim
                   and Prof. Min-Koo Kim, with a thesis on dimensional quality assessment of structural
                   steel members using terrestrial laser scan data.
                 </p>
@@ -98,7 +98,7 @@ export default function Home() {
                 </p>
                 <p className="text-justify">
                   My long-term goal is to develop practical robotic systems that operate safely, efficiently,
-                  and reliably in real construction environments - integrating perception, environmental
+                  and reliably in real construction environments, integrating perception, environmental
                   understanding, and autonomous decision-making for{" "}
                   <strong>human-robot collaboration</strong> in complex real-world settings.
                 </p>
