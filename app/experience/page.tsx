@@ -69,13 +69,13 @@ function TimelineItem({
 
       <div className="mb-1 flex flex-wrap items-baseline gap-3">
         <h3 className="text-lg font-bold">{role}</h3>
-        <span className="text-xs text-sienna uppercase tracking-widest">{period}</span>
+        <span className="text-sm text-sienna uppercase tracking-widest">{period}</span>
       </div>
-      <p className="text-sm text-sage mb-1">{org}</p>
-      {advisor && <p className="text-xs text-mauve mb-3">Advisor: {advisor}</p>}
+      <p className="text-sage mb-1">{org}</p>
+      {advisor && <p className="text-sm text-mauve mb-3">Advisor: {advisor}</p>}
       <ul className="space-y-1.5">
         {points.map((pt, i) => (
-          <li key={i} className="flex items-start gap-2 text-sm text-gray-200">
+          <li key={i} className="flex items-start gap-2 text-gray-200">
             <span className="w-1.5 h-1.5 rounded-full bg-sage flex-shrink-0 mt-1.5" />
             {pt}
           </li>

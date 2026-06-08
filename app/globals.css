@@ -13,9 +13,9 @@
 
   /* Earthy palette */
   --color-cream: #F0E6D3;
-  --color-sage: #B5B09A;
-  --color-mauve: #C9A898;
-  --color-sienna: #A0622A;
+  --color-sage: #D0CBBA;
+  --color-mauve: #DEBAAD;
+  --color-sienna: #C07830;
   --color-olive: #6B6535;
 
   /* Dark earthy backgrounds */
@@ -23,12 +23,21 @@
   --color-earth-900: #2D2A14;
   --color-earth-800: #3A3720;
   --color-earth-700: #4A4730;
+
+  /* Blink animation */
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 html {

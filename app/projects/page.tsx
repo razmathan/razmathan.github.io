@@ -51,12 +51,12 @@ export default function ProjectsPage() {
             <div key={project.title} className="bg-earth-900 rounded-xl p-6 flex flex-col gap-3">
               <div>
                 <h2 className="text-lg font-bold leading-snug">{project.title}</h2>
-                <p className="text-xs text-sienna uppercase tracking-widest mt-1">{project.period}</p>
+                <p className="text-sm text-sienna uppercase tracking-widest mt-1">{project.period}</p>
               </div>
-              <p className="text-sm text-gray-200 leading-relaxed flex-1">{project.description}</p>
+              <p className="text-gray-200 leading-relaxed flex-1">{project.description}</p>
               <div className="flex flex-wrap gap-2 mt-1">
                 {project.tools.map((tool) => (
-                  <span key={tool} className="text-xs bg-earth-800 text-cream px-2 py-0.5 rounded">
+                  <span key={tool} className="text-sm bg-earth-800 text-cream px-2 py-0.5 rounded">
                     {tool}
                   </span>
                 ))}

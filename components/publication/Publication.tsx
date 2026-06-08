@@ -25,7 +25,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
 
   return (
     <div className="flex flex-col md:flex-row gap-2 md:gap-8 mb-10 last:mb-0">
-      <div className="w-24 shrink-0 text-sm font-medium text-sienna pt-1.5 uppercase tracking-widest">
+      <div className="w-24 shrink-0 font-medium text-sienna pt-1.5 uppercase tracking-widest">
         {date}
       </div>
 

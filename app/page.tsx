@@ -44,7 +44,7 @@ export default function Home() {
             />
             <h1 className="text-2xl font-bold mt-5">Mathanraj Rajendran</h1>
             <p className="text-sienna font-medium mt-1">Research Assistant</p>
-            <p className="text-sage text-sm mt-1 leading-snug">
+            <p className="text-sage mt-1 leading-snug">
               Smart Construction &amp; Systems Lab<br />
               Chungbuk National University
             </p>
@@ -72,12 +72,12 @@ export default function Home() {
 
           {/* Right: About content */}
           <div className="md:col-span-2">
-            <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 bg-sienna/20 border border-sienna/40 rounded-full text-sm text-mauve font-medium">
-              <span className="w-2 h-2 rounded-full bg-sienna animate-pulse" />
+            <div className="inline-flex items-center gap-2 mb-5 px-5 py-2 bg-sienna/20 border border-sienna/40 rounded-full text-base text-mauve font-bold">
+              <span className="w-2.5 h-2.5 rounded-full bg-sienna animate-blink" />
               Open to PhD positions
             </div>
             <h2 className="text-3xl font-bold mb-5">About Me</h2>
-            <div className="space-y-4 text-gray-200 leading-relaxed text-sm">
+            <div className="space-y-4 text-gray-200 leading-relaxed">
               <p>
                 I am a <strong className="text-white">Research Assistant</strong> at the{" "}
                 <strong className="text-white">Smart Construction &amp; Systems Laboratory</strong>,{" "}
@@ -107,7 +107,7 @@ export default function Home() {
               href="/mathanraj_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-earth-800 hover:bg-earth-700 text-white rounded-md text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-earth-800 hover:bg-earth-700 text-white rounded-md font-medium transition-colors"
             >
               <MdDownload size={18} />
               Download CV
@@ -126,7 +126,7 @@ export default function Home() {
                     "Point Cloud Processing",
                     "Human-Robot Collaboration",
                   ].map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-gray-200">
+                    <li key={item} className="flex items-center gap-2 text-gray-200">
                       <span className="w-1.5 h-1.5 rounded-full bg-sienna flex-shrink-0" />
                       {item}
                     </li>
@@ -140,15 +140,15 @@ export default function Home() {
                   <li className="flex items-start gap-3">
                     <FaGraduationCap className="text-sage mt-0.5 flex-shrink-0" size={18} />
                     <div>
-                      <p className="text-sm font-semibold text-white">MSc Global Smart City</p>
-                      <p className="text-xs text-sage">Sungkyunkwan University · 2023–2025</p>
+                      <p className="font-semibold text-white">MSc Global Smart City</p>
+                      <p className="text-sm text-sage">Sungkyunkwan University · 2023–2025</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <FaGraduationCap className="text-sage mt-0.5 flex-shrink-0" size={18} />
                     <div>
-                      <p className="text-sm font-semibold text-white">BE Civil Engineering</p>
-                      <p className="text-xs text-sage">Anna University · 2014–2018</p>
+                      <p className="font-semibold text-white">BE Civil Engineering</p>
+                      <p className="text-sm text-sage">Anna University · 2014–2018</p>
                     </div>
                   </li>
                 </ul>
