@@ -3,8 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react'
 
-const isProd = process.env.NODE_ENV === 'production';
-const prefix = isProd ? '/raj-portfolio' : '';
+const prefix = '';
 
 const links = [
     {
