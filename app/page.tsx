@@ -72,6 +72,10 @@ export default function Home() {
 
           {/* Right: About content */}
           <div className="md:col-span-2">
+            <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 bg-orange-500/20 border border-orange-500/40 rounded-full text-sm text-orange-300 font-medium">
+              <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+              Open to PhD positions
+            </div>
             <h2 className="text-3xl font-bold mb-5">About Me</h2>
             <div className="space-y-4 text-gray-200 leading-relaxed text-sm">
               <p>
