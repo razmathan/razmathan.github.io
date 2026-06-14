@@ -120,7 +120,6 @@ export default function Home() {
                 <ul className="space-y-2">
                   {[
                     "Construction Robotics",
-                    "Computer Vision",
                     "Scan-to-BIM & Digital Twin",
                     "Automated Inspection & Monitoring",
                     "Point Cloud Processing",
