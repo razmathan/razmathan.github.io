@@ -84,7 +84,7 @@ export default function Home() {
                 <strong className="text-white">Chungbuk National University</strong>, South Korea, under the
                 supervision of <strong className="text-white">Prof. Min-Koo Kim</strong>. I completed my{" "}
                 <strong className="text-white">Master of Science in Global Smart City</strong> at{" "}
-                <strong className="text-white">Sungkyunkwan University</strong> (GPA: 4.31/4.5), with a thesis on
+                <strong className="text-white">Sungkyunkwan University</strong>, with a thesis on
                 dimensional quality assessment of structural steel members using terrestrial laser scan data.
               </p>
               <p>
