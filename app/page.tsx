@@ -88,17 +88,17 @@ export default function Home() {
                 dimensional quality assessment of structural steel members using terrestrial laser scan data.
               </p>
               <p>
-                My research lies at the intersection of{" "}
-                <strong className="text-white">artificial intelligence, robotics, and the built environment</strong>.
-                I am interested in how robots can perceive, understand, and interact with complex construction
-                environments autonomously and safely. My current work focuses on semantic segmentation using{" "}
-                <strong className="text-white">foundation models and Vision Language Models (VLMs)</strong>,
-                synthetic data generation, and real-time object detection for robotic manipulation.
+                My research has focused on{" "}
+                <strong className="text-white">sensing and 3D data processing</strong>, using terrestrial laser
+                scanning and point clouds for dimensional quality assessment of steel structures. I am now moving
+                toward <strong className="text-white">scene understanding</strong>, applying foundation models and{" "}
+                <strong className="text-white">Vision Language Models (VLMs)</strong> to semantic segmentation of
+                building environments.
               </p>
               <p>
-                My long-term goal is to develop practical robotic systems integrating perception, environmental
-                understanding, and autonomous decision-making for{" "}
-                <strong className="text-white">human-robot collaboration</strong> in real construction environments.
+                My long-term goal is to connect perception and understanding to{" "}
+                <strong className="text-white">BIM integration and autonomous robotic systems</strong> for
+                construction, contributing to safer and more efficient built environments.
               </p>
             </div>
 
