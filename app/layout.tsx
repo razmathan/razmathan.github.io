@@ -24,6 +24,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `
+          var sc_project=13304891;
+          var sc_invisible=1;
+          var sc_security="b1e9f25c";
+        `}} />
+        <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async />
+        <noscript>
+          <img src="https://c.statcounter.com/13304891/0/b1e9f25c/1/" alt="" referrerPolicy="no-referrer-when-downgrade" style={{display:'none'}} />
+        </noscript>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
