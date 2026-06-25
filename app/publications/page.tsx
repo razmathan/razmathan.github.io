@@ -44,8 +44,15 @@ export default function PublicationsPage() {
           />
           <Publication
             date="2026"
-            title="Automated Shape-Aware Dimensional Classification and Semantic-Instance Segmentation of Steel Structures from Occluded Point Cloud Data"
+            title="Automated Shape-Aware Dimensional Classification and Semantic-Instance Segmentation of Steel Structures from Occluded Point Cloud Data for Scan-to-BIM"
             authors="Rajendran, M., Ayembilla, F.B., Sim, S. H., & Kim, M. K."
+            venue="Automation in Construction"
+            status="Under Review"
+          />
+          <Publication
+            date="2026"
+            title="Improving Cross-Facility Generalization of MEP Semantic Segmentation Using Independent-Source Synthetic Point Cloud Data"
+            authors="Ayembilla, F.B., Rajendran, M., & Kim, M. K."
             venue="Automation in Construction"
             status="Under Review"
           />
