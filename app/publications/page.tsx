@@ -47,7 +47,7 @@ export default function PublicationsPage() {
             title="Automated Shape-Aware Dimensional Classification and Semantic-Instance Segmentation of Steel Structures from Occluded Point Cloud Data for Scan-to-BIM"
             authors="Rajendran, M., Ayembilla, F.B., Sim, S. H., & Kim, M. K."
             venue="Automation in Construction"
-            status="Under Review"
+            status="Under Revision"
           />
           <Publication
             date="2026"

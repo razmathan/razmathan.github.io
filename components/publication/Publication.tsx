@@ -33,7 +33,7 @@ const Publication = ({ date, title, authors, venue, status, paperUrl }: Publicat
         <h3 className="text-xl font-bold text-white leading-tight">
           {title}
           {status && (
-            <span className="text-mauve font-normal italic text-sm ml-2">
+            <span className={`font-normal italic text-sm ml-2 ${status === 'Under Revision' ? 'text-amber-400' : 'text-mauve'}`}>
               ({status})
             </span>
           )}
